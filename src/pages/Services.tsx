@@ -129,7 +129,7 @@ const Services = () => {
                         ))}
                       </ul>
                     </div>
-                    {/* {service.image && (
+                    {service.image && (
                       <div className="rounded-lg overflow-hidden">
                         <img
                           src={service.image}
@@ -137,7 +137,7 @@ const Services = () => {
                           className="w-full h-full object-cover"
                         />
                       </div>
-                    )} */}
+                    )}
                   </div>
                 </CardContent>
               </Card>
