@@ -17,6 +17,36 @@ const galleryItems = [
   { image: castingProcessImg, category: "Newborn", title: "Casting Session" },
   { image: galleryWallImg, category: "Siblings", title: "Sibling Casts" },
   { image: heroCastImg, category: "Hands", title: "Hand & Foot Set" },
+  {
+    image:
+      "https://i.pinimg.com/1200x/bb/ab/1e/bbab1ecf992c941743bb75af077d43c7.jpg",
+    category: "Framed",
+    title: "Hand & Foot Set",
+  },
+  {
+    image:
+      "https://i.pinimg.com/1200x/da/c4/dc/dac4dc6434891a38224c96a31f05456a.jpg",
+    category: "Hands",
+    title: "Hand & Foot Set",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/6f/72/4d/6f724d4ac3ab269fc3ae14caddbe9845.jpg",
+    category: "Hands",
+    title: "Hand & Foot Set",
+  },
+  {
+    image:
+      "https://i.pinimg.com/1200x/96/56/48/96564817a134950871fcaa4c726e7d61.jpg",
+    category: "Silver",
+    title: "Silver Cast in Box",
+  },
+  {
+    image:
+      "https://i.pinimg.com/736x/b2/83/70/b283703a9ab7bd56f396f38e6a03a58a.jpg",
+    category: "Hands",
+    title: "Hand & Foot Set",
+  },
 ];
 
 const Gallery = () => {

@@ -78,7 +78,7 @@ const services = [
     title: "Baby Gifts",
     description:
       "Looking for a unique baby shower or christening gift? Our gift packages make thoughtful presents that new parents will cherish forever.",
-    image: galleryWallImg,
+    image: "https://i.pinimg.com/1200x/bb/ab/1e/bbab1ecf992c941743bb75af077d43c7.jpg",
     features: [
       "Gift packaging available",
       "Gift certificates offered",
