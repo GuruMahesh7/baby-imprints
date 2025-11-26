@@ -26,7 +26,8 @@ const services = [
     title: "3D Face Casts",
     description:
       "Preserve your baby's adorable features with our specialized face casting service. Using baby-safe materials and a comfortable process, we create a detailed replica of your little one's precious face.",
-    image: castingProcessImg,
+    image:
+      "https://i.pinimg.com/1200x/fb/0b/13/fb0b139f02df532e353ecad86d5c6341.jpg",
     features: [
       "Completely safe and comfortable",
       "Best for babies 6+ months",
@@ -78,7 +79,8 @@ const services = [
     title: "Baby Gifts",
     description:
       "Looking for a unique baby shower or christening gift? Our gift packages make thoughtful presents that new parents will cherish forever.",
-    image: "https://i.pinimg.com/1200x/bb/ab/1e/bbab1ecf992c941743bb75af077d43c7.jpg",
+    image:
+      "https://i.pinimg.com/1200x/bb/ab/1e/bbab1ecf992c941743bb75af077d43c7.jpg",
     features: [
       "Gift packaging available",
       "Gift certificates offered",
