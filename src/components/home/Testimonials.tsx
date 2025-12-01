@@ -35,25 +35,38 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index}>
-              <CardContent className="p-6">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4 italic">
-                  "{testimonial.content}"
-                </p>
-                <div>
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Marquee-style scrolling testimonials */}
+        <div className="relative overflow-hidden">
+          <div className="flex gap-6 animate-[marquee_30s_linear_infinite] hover:[animation-play-state:paused]">
+            {[...Array(2)].map((_, loopIndex) =>
+              testimonials.map((testimonial, index) => (
+                <Card
+                  key={`${loopIndex}-${index}`}
+                  className="min-w-[280px] max-w-sm flex-shrink-0 bg-card"
+                >
+                  <CardContent className="p-6">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="h-5 w-5 fill-primary text-primary"
+                        />
+                      ))}
+                    </div>
+                    <p className="text-muted-foreground mb-4 italic">
+                      "{testimonial.content}"
+                    </p>
+                    <div>
+                      <p className="font-semibold">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {testimonial.role}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              )),
+            )}
+          </div>
         </div>
       </div>
     </section>

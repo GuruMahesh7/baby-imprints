@@ -7,19 +7,37 @@ const FloatingWhatsappButton = () => {
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-[60] flex items-center gap-3 rounded-full bg-green-500 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-green-600"
+      className="fixed bottom-6 right-6 z-[60] flex items-center gap-3 rounded-full bg-[#25D366] px-3 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-[#1ebe5d]"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className="h-5 w-5"
+        viewBox="0 0 32 32"
+        className="h-10 w-10"
         aria-hidden="true"
       >
-        <path d="M20.52 3.48A11.72 11.72 0 0012 .5a11.6 11.6 0 00-9.32 6.35A11.74 11.74 0 003 19.5L.5 23l3.05-.9A11.64 11.64 0 0012 23.5c3.12 0 6.04-1.22 8.24-3.43A11.64 11.64 0 0023.5 11.99 11.72 11.72 0 0020.52 3.48z" />
-        <path d="M17.6 14.2c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.69.15s-.79.98-.97 1.18c-.18.2-.36.22-.66.07a5.54 5.54 0 01-1.64-1.02 6.06 6.06 0 01-1.12-1.4c-.12-.2 0-.31.09-.41.1-.1.22-.24.33-.36.1-.12.14-.2.22-.33.08-.12.04-.22-.03-.36-.07-.12-.69-1.66-.95-2.28-.25-.6-.5-.52-.69-.53-.18-.01-.4-.01-.62-.01s-.36.05-.55.24c-.2.19-.78.76-.78 1.86s.8 2.17.9 2.32c.1.15 1.54 2.34 3.73 3.29 2.19.95 2.19.64 2.59.6.4-.04 1.26-.5 1.44-.99.18-.49.18-.9.13-.99-.05-.1-.18-.15-.38-.3z" />
+        <defs>
+          <linearGradient
+            id="whatsappGradient"
+            x1="16"
+            y1="0"
+            x2="16"
+            y2="32"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#25D366" />
+            <stop offset="1" stopColor="#128C7E" />
+          </linearGradient>
+        </defs>
+        <path
+          d="M16 3C9.925 3 5 7.925 5 14c0 2.018.59 3.892 1.616 5.48L5 27l7.77-1.588A10.94 10.94 0 0 0 16 25c6.075 0 11-4.925 11-11S22.075 3 16 3Z"
+          fill="url(#whatsappGradient)"
+        />
+        <path
+          d="M12.205 10.424c-.24-.533-.493-.544-.722-.555l-.616-.01c-.214 0-.56.08-.853.398-.293.32-1.12 1.094-1.12 2.668 0 1.575 1.147 3.095 1.307 3.309.16.213 2.21 3.533 5.45 4.81 2.696 1.063 3.245.852 3.83.8.585-.053 1.89-.772 2.157-1.518.267-.746.267-1.386.187-1.518-.08-.133-.293-.213-.614-.373-.32-.16-1.89-.93-2.183-1.035-.293-.107-.507-.16-.72.16-.213.32-.827 1.034-1.013 1.247-.187.213-.373.24-.693.08-.32-.16-1.35-.498-2.574-1.588-.952-.85-1.595-1.899-1.782-2.219-.187-.32-.02-.494.14-.653.144-.143.32-.373.48-.56.16-.187.213-.32.32-.533.107-.213.053-.4-.027-.56-.08-.16-.707-1.76-.987-2.404Z"
+          fill="#fff"
+        />
       </svg>
-      <span>Get Our Services</span>
+      <span className="hidden md:inline">Get Our Services</span>
     </a>
   );
 };
