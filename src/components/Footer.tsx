@@ -78,15 +78,15 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
                 <a
-                  href="mailto:info@babyimprints.in"
+                  href="mailto:babyimprints@gmail.com"
                   className="text-primary transition-colors"
                 >
-                  info@babyimprints.in
+                  babyimprints@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-4 text-primary">
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/babyimprintsindia"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Visit our Facebook page"
@@ -95,7 +95,7 @@ const Footer = () => {
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/babyimprints.in/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Visit our Instagram profile"
