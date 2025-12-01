@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Heart, Phone, Mail, MapPin } from "lucide-react";
+import { Heart, Phone, Mail, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -84,25 +84,33 @@ const Footer = () => {
                   info@babyimprints.in
                 </a>
               </div>
-              <div className="flex items-center gap-2">
-                {/* WhatsApp icon (inline SVG) */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-4 w-4 text-green-500"
-                  aria-hidden="true"
-                >
-                  <path d="M20.52 3.48A11.72 11.72 0 0012 .5a11.6 11.6 0 00-9.32 6.35A11.74 11.74 0 003 19.5L.5 23l3.05-.9A11.64 11.64 0 0012 23.5c3.12 0 6.04-1.22 8.24-3.43A11.64 11.64 0 0023.5 11.99 11.72 11.72 0 0020.52 3.48z" />
-                  <path d="M17.6 14.2c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.69.15s-.79.98-.97 1.18c-.18.2-.36.22-.66.07a5.54 5.54 0 01-1.64-1.02 6.06 6.06 0 01-1.12-1.4c-.12-.2 0-.31.09-.41.1-.1.22-.24.33-.36.1-.12.14-.2.22-.33.08-.12.04-.22-.03-.36-.07-.12-.69-1.66-.95-2.28-.25-.6-.5-.52-.69-.53-.18-.01-.4-.01-.62-.01s-.36.05-.55.24c-.2.19-.78.76-.78 1.86s.8 2.17.9 2.32c.1.15 1.54 2.34 3.73 3.29 2.19.95 2.19.64 2.59.6.4-.04 1.26-.5 1.44-.99.18-.49.18-.9.13-.99-.05-.1-.18-.15-.38-.3z" />
-                </svg>
+              <div className="flex items-center gap-4 text-primary">
                 <a
-                  href="https://wa.me/919866937777?text=I'm%20interested%20in%20your%20services"
+                  href="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary transition-colors"
+                  aria-label="Visit our Facebook page"
+                  className="hover:text-primary/80 transition-colors"
                 >
-                  Get Our Services
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit our Instagram profile"
+                  className="hover:text-primary/80 transition-colors"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit our YouTube channel"
+                  className="hover:text-primary/80 transition-colors"
+                >
+                  <Youtube className="h-5 w-5" />
                 </a>
               </div>
             </div>
