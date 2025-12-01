@@ -5,11 +5,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useSearchParams } from "react-router-dom";
 
 const Contact = () => {
   const { toast } = useToast();
+  const [searchParams] = useSearchParams();
+  const selectedServiceParam = searchParams.get("service") ?? "";
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -18,6 +21,14 @@ const Contact = () => {
     service: "",
     message: "",
   });
+
+  useEffect(() => {
+    if (selectedServiceParam) {
+      setFormData((prev) =>
+        prev.service === selectedServiceParam ? prev : { ...prev, service: selectedServiceParam },
+      );
+    }
+  }, [selectedServiceParam]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

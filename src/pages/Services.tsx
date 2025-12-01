@@ -130,6 +130,15 @@ const Services = () => {
                           </li>
                         ))}
                       </ul>
+                      <Button asChild className="mt-6">
+                        <Link
+                          to={`/contact?service=${encodeURIComponent(
+                            service.title,
+                          )}`}
+                        >
+                          Book This Service
+                        </Link>
+                      </Button>
                     </div>
                     {service.image && (
                       <div className="rounded-lg overflow-hidden">
