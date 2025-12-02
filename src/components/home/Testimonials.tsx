@@ -5,19 +5,22 @@ const testimonials = [
   {
     name: "Priya Sharma",
     role: "Mother of twins",
-    content: "Absolutely beautiful work! They captured my twins' hands perfectly. The process was so gentle and quick. Highly recommend!",
+    content:
+      "Absolutely beautiful work! They captured my twins' hands perfectly. The process was so gentle and quick. Highly recommend!",
     rating: 5,
   },
   {
     name: "Rajesh Kumar",
     role: "First-time dad",
-    content: "Best gift we could give our parents! The silver cast is stunning and the frame quality is exceptional. Worth every penny.",
+    content:
+      "Best gift we could give our parents! The silver cast is stunning and the frame quality is exceptional. Worth every penny.",
     rating: 5,
   },
   {
     name: "Sneha Reddy",
     role: "Mother of 3",
-    content: "I've done this for all three of my children. The team is professional, patient, and the results are always perfect. Thank you!",
+    content:
+      "I've done this for all three of my children. The team is professional, patient, and the results are always perfect. Thank you!",
     rating: 5,
   },
 ];
@@ -35,9 +38,10 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Marquee-style scrolling testimonials */}
-        <div className="relative overflow-hidden">
-          <div className="flex gap-6 animate-[marquee_30s_linear_infinite] hover:[animation-play-state:paused]">
+        {/* Smooth marquee with edge fade mask */}
+        <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="flex gap-6 px-10 animate-[marquee_10s_linear_infinite] hover:[animation-play-state:paused]">
+
             {[...Array(2)].map((_, loopIndex) =>
               testimonials.map((testimonial, index) => (
                 <Card
@@ -53,9 +57,11 @@ const Testimonials = () => {
                         />
                       ))}
                     </div>
+
                     <p className="text-muted-foreground mb-4 italic">
                       "{testimonial.content}"
                     </p>
+
                     <div>
                       <p className="font-semibold">{testimonial.name}</p>
                       <p className="text-sm text-muted-foreground">
@@ -64,8 +70,9 @@ const Testimonials = () => {
                     </div>
                   </CardContent>
                 </Card>
-              )),
+              ))
             )}
+
           </div>
         </div>
       </div>
